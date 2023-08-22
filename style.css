@@ -1,0 +1,321 @@
+:root {
+    --c1: hsl(243, 87%, 12%);
+    --c2: hsl(238, 22%, 44%);
+
+    --c3: hsl(224, 93%, 58%);
+    --c4: hsl(170, 45%, 43%);
+
+    --c5: hsl(240, 75%, 98%);
+    --c6: hsl(0, 0%, 75%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif;
+    (Headings, Call-to-actions, Header Navigation) 400 700
+    ------------------------------------------------
+    font-family: 'Raleway', sans-serif; 
+    (Body) 400
+    */
+}
+main {
+    padding: 3rem;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.head .h-1 a {
+    text-decoration: none;
+    color: var(--c2);
+}
+.head .h-1 a:not(:first-child) {
+    margin-left: 3rem;
+}
+.m-1 {
+    margin-bottom: 9rem;
+}
+.m-1,
+.m-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.m-1 .m-1-1,
+.m-2 .m-2-1 {
+    width: 40%;
+    font-family: 'Raleway', sans-serif; 
+}
+.m-1 .m-1-1 h1,
+.m-2 .m-2-1 h1 {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    font-size: 35px;
+}
+.m-1 .m-1-1 > p,
+.m-2 .m-2-1 > p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.m-1 .m-1-1 .get-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.m-1 .m-1-1 .get-input > input {
+    flex: 1 1 290px;
+}
+.m-1 .m-1-1 .get-input > button {
+    flex: auto
+}
+.m-1 .m-1-1 input {
+    padding: .5rem .9rem;
+}
+.m-1 .m-1-1 input::placeholder {
+    color: var(--c6);
+    font-family: 'Open Sans', sans-serif;
+}
+.m-1 .m-1-1 button,
+.m-3 .m-3-2 button {
+    border: 0;
+    color: white;
+    background-color: var(--c3);
+    padding: .5rem 3.3rem;
+    border-radius: .2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.m-1 > img,
+.m-2 > img{
+    max-width: 680px;
+    width: 100%;
+    height: auto;
+}
+.m-2 {
+    padding: 3rem;
+    background-color: var(--c5);
+}
+.m-2 > img {
+    max-width: 649px;
+}
+.m-2 .m-2-1 {
+    width: 42.5%;
+}
+.m-2 .m-2-1 .green-a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.m-2 .m-2-1 .green-a > a {
+    color: var(--c4);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--c4);
+    padding-bottom: 3px;
+}
+.m-2 .m-2-1 .card {
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 7px var(--c6);
+    margin-top: 2.5rem;
+    padding: 2rem;
+    width: 330px;
+    font-size: 12px;
+}
+.m-2 .m-2-1 .card > img {
+    margin-bottom: .5rem;
+}
+.m-2 .m-2-1 .card > p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+.m-2 .m-2-1 .card .profile {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.m-2 .m-2-1 .card .profile > img {
+    width: 30px;
+    border-radius: 50%;
+}
+.m-2 .m-2-1 .card .profile .name > p {
+    font-size: 9px;
+}
+.m-3 {
+    background-color: var(--c2);
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    gap: 3rem;
+}
+.m-3 .m-3-1 {
+    width: 28%;
+}
+.m-3 .m-3-1 h2 {
+    margin-bottom: 1rem;
+}
+.m-3 .m-3-1 > p {
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: 75%;
+}
+.m-3 .m-3-2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+.m-3 .m-3-2 input {
+    padding: .5rem .9rem;
+    width: 400px;
+}
+.m-3 .m-3-2 button {
+    padding: .5rem 1.5rem;
+}
+.m-3 .m-3-2 input::placeholder {
+    color: var(--c6);
+}
+footer {
+    background-color: var(--c1);
+    padding: 4rem 3rem;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+    opacity: 80%;
+}
+.c-1 .c-1-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.c-1 .c-1-2 {
+    margin-bottom: 1rem;
+}
+.c-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+    row-gap: 10px;
+}
+.c-2 a {
+    color: white;
+    text-decoration: none;
+}
+.c-3 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.c-3 a:not(:last-child) {
+    margin-right: 2rem;
+}
+.c-3 a:hover,
+.c-2 a:hover {
+    color: var(--c3);
+}
+.c-3 a::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 50%;
+    bottom: -7.5px;
+    left: -8.5px;
+}
+button:hover,
+.green-a a:hover {
+    opacity: 50%;
+}
+@media(max-width: 1309px) {
+    .m-1 > img,
+    .m-2 > img {
+        order: -1;
+    }
+    .m-1,
+    .m-2,
+    .green-a {
+        justify-content: center;
+    }
+    .m-1,
+    .m-2 .m-2-1 > h1 {
+        text-align: center;
+    }
+    .card {
+        margin: 0 auto;
+    }
+    .m-1 .m-1-1,
+    .m-2 .m-2-1 {
+        width: 100%;
+    }
+}
+@media(max-width: 718px) {
+    .m-3 .m-3-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .m-3 .m-3-2 {
+        align-items: unset;
+        width: 100%;
+    }
+    .m-3 .m-3-2 input,
+    .m-3 .m-3-2 button {
+        flex: 1;
+        width: unset;
+    }
+    .head > img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+    .head .h-1 a{
+        font-size: 12px;
+    }
+    .head .h-1 a:not(:first-child) {
+        margin-left: .5rem;
+    }
+}
+@media(max-width: 543px) {
+    .container {
+        flex-direction: column;
+    }
+    .container .c-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+    .container .c-3 {
+        align-self: center;
+    }
+    .m-2 .m-2-1 .card {
+        width: 100%;
+    }
+    main,
+    .m-2,
+    .m-3,
+    footer {
+        padding: 1.5rem;
+    }
+    .m-1 .m-1-1 h1,
+    .m-2 .m-2-1 h1 {
+        font-size: 25px;
+    }
+}
